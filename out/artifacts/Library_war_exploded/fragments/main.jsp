@@ -2,3 +2,5 @@
 <%-- Main content --%>
 
 LIBRARY
+
+<jsp:include page="bookaddform.jsp"/>

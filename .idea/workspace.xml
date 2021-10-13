@@ -7,9 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="935d0c8f-7b9b-459c-be1d-1e58174e6784" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/web/fragments/bookaddform.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/step/library/filters/DbFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/step/library/filters/DbFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/step/library/utils/BookOrm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/step/library/utils/BookOrm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/step/library/filters/DbFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/step/library/filters/DbFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/step/library/utils/BookOrm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/step/library/utils/BookOrm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/fragments/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/fragments/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/install.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/install.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/step/library/filters/DbFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/step/library/filters/DbFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/step/library/utils/BookOrm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/step/library/utils/BookOrm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/fragments/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/fragments/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/install.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/install.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/step/library/filters/DbFilter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="534">
-              <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+              <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3050#3051#0" expanded="true" />
@@ -46,9 +54,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/install.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/fragments/bookaddform.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -97,10 +118,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/fragments/main.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/step/library/utils/Db.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="393">
-              <caret line="27" column="52" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="52" />
+              <caret line="27" column="52" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,27 +139,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/fragments/header.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/step/library/utils/BookOrm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="746">
+            <state relative-caret-position="962">
               <caret line="63" column="68" selection-start-line="63" selection-start-column="68" selection-end-line="63" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -161,7 +173,6 @@
         <option value="$PROJECT_DIR$/web/css/main.css" />
         <option value="$PROJECT_DIR$/src/step/library/filters/DbFilter.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/fragments/main.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/package.json" />
         <option value="$PROJECT_DIR$/web/WEB-INF/config.json" />
         <option value="$PROJECT_DIR$/Library.iml" />
@@ -170,11 +181,19 @@
         <option value="$PROJECT_DIR$/src/main/java/step/library/models/Book.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/step/library/utils/Db.java" />
-        <option value="$PROJECT_DIR$/web/install.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/step/library/filters/DbFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/step/library/utils/BookOrm.java" />
+        <option value="$PROJECT_DIR$/web/fragments/bookaddform.jsp" />
+        <option value="$PROJECT_DIR$/web/fragments/main.jsp" />
+        <option value="$PROJECT_DIR$/web/install.jsp" />
       </list>
     </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -256,6 +275,12 @@
               <item name="Library" type="b2602c69:ProjectViewProjectNode" />
               <item name="Library" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="fragments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -267,6 +292,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -277,6 +303,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -376,7 +403,7 @@
       <updated>1634019298918</updated>
       <workItem from="1634019300604" duration="8326000" />
       <workItem from="1634028831885" duration="18000" />
-      <workItem from="1634103562226" duration="11203000" />
+      <workItem from="1634103562226" duration="13493000" />
     </task>
     <task id="LOCAL-00001" summary="2021-10-13--1">
       <created>1634114669425</created>
@@ -385,17 +412,24 @@
       <option name="project" value="LOCAL" />
       <updated>1634114669425</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2021-10-13--2">
+      <created>1634117906074</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1634117906074</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19547000" />
+    <option name="totallyTimeSpent" value="21837000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1714" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.12905163" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12877871" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -405,7 +439,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.1892779" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1892779" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -434,7 +468,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2021-10-13--1" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021-10-13--1" />
+    <MESSAGE value="2021-10-13--2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021-10-13--2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/step/library/filters/utils/Db.java" />
@@ -449,13 +484,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/fragments/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -536,20 +564,17 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/step/library/utils/Db.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
-          <caret line="27" column="52" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="52" />
+          <caret line="27" column="52" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/install.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/step/library/filters/DbFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="534">
-          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3050#3051#0" expanded="true" />
@@ -559,12 +584,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/step/library/utils/BookOrm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
+        <state relative-caret-position="962">
           <caret line="63" column="68" selection-start-line="63" selection-start-column="68" selection-end-line="63" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#BookOrm#0;class#BookOrm#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/fragments/bookaddform.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/fragments/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/install.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
         </state>
       </provider>
     </entry>
