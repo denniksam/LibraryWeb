@@ -5,6 +5,7 @@ import step.library.utils.Db;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
+import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -20,6 +21,16 @@ public class DbFilter implements Filter {
     }
 
     public void doFilter( ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+        // Filter path is "/*", so all requests pass through
+        // this filter. Such as .css, .js, etc
+        String req = ((HttpServletRequest) servletRequest).getRequestURI();
+        for( String ext : new String[] { ".css", ".js", ".jsp"} ) {
+            if( req.endsWith( ext ) ) {
+                filterChain.doFilter(servletRequest, servletResponse);
+                return ;
+            }
+        }
+
         // Real file path - stores in Servlet Context
         String path =
                 /*((HttpServletRequest) servletRequest)
