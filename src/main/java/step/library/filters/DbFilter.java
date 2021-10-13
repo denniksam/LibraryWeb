@@ -1,6 +1,7 @@
 package step.library.filters;
 
 import org.json.JSONObject;
+import step.library.utils.Db;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
@@ -39,9 +40,23 @@ public class DbFilter implements Filter {
                         new String( buf )
                 ) ;
                 // Test connection
-
-                filterChain.doFilter( servletRequest, servletResponse ) ;
-                return ;
+                if( Db.setConnection( json ) ) {
+                    // Check for Books table
+                    if( Db.getBookOrm().isTableExists() ) {
+                        filterChain.doFilter(servletRequest, servletResponse);
+                    } else {
+                        // Install page
+                        servletRequest
+                                .getRequestDispatcher( "/install.jsp" )
+                                .forward( servletRequest, servletResponse ) ;
+                    }
+                } else {
+                    // Show static page
+                    servletRequest
+                            .getRequestDispatcher( "/static.jsp" )
+                            .forward( servletRequest, servletResponse ) ;
+                }
+                return;
             } catch ( IOException ex ) {
                 System.err.println( "DbFilter: " + ex.getMessage() ) ;
             }
@@ -55,3 +70,8 @@ public class DbFilter implements Filter {
         this.filterConfig = null ;
     }
 }
+/*
+Фильтр проверяет есть ли таблица Books/Literature
+Если нет - переходит на страницу install.jsp
+на которой кнопка "Создать БД"
+ */
