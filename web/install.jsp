@@ -10,11 +10,8 @@
 <body>
 <h1>DB is empty</h1>
 <% if(confirm == null) { %>
-
     <a href="?confirm=true">INSTALL</a>
-
 <% } else if( Db.getBookOrm().installTable() ) { %>
-
     <b>CREATED</b>
     <script>
         setTimeout(
@@ -23,9 +20,7 @@
         );
     </script>
 <% } else { %>
-
     <i>CREATE ERROR see server logs</i>
-
 <% } %>
 
 </body>
