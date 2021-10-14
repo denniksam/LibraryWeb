@@ -63,8 +63,8 @@ public class BookServlet extends HttpServlet {
             return null ;
         }
         String hostingFolder =
-            this.getServletContext().getRealPath("/uploads") ;
-        String devFolder = "C:\\Users\\samoylenko_d\\IdeaProjects\\Library\\web\\uploads" ;
+            this.getServletContext().getRealPath("/uploads") + "/" ;
+        String devFolder = "C:\\Users\\samoylenko_d\\IdeaProjects\\Library\\web\\uploads\\" ;
         String uploadedFilename = null ;
         try {
             uploadedFilename = filePart.getSubmittedFileName() ;
