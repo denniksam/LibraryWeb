@@ -1,5 +1,8 @@
 document.addEventListener("submit",sendClick);
-
+document.addEventListener("DOMContentLoaded", ()=>{
+    const cover = document.getElementById("cover");
+    cover.onchange = coverChange;
+});
 function sendClick(e) {
     e.preventDefault();
     // console.log(e.target); return;  // e.target - form
@@ -16,3 +19,11 @@ function sendClick(e) {
     fetch("books", { method: "POST", body: formData })
         .then(r => r.text()).then(console.log)
 }
+
+function coverChange(e) {
+    if(e.target.files) {
+        const coverImg = document.getElementById("coverImg");
+        coverImg.src=URL.createObjectURL(e.target.files[0]);
+    }
+}
+

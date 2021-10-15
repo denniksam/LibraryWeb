@@ -1,5 +1,5 @@
 <%@ page import="step.library.utils.Db" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%
     String confirm = request.getParameter("confirm");
 %>

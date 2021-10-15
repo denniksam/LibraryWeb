@@ -18,10 +18,6 @@ public class Db {
         return bookOrm;
     }
 
-    public static Connection getConnection() {
-        return connection;
-    }
-
     public static boolean setConnection( JSONObject json ) {
         try {
             String dbms = json.getString( "dbms" ) ;

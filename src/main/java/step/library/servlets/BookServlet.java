@@ -1,6 +1,8 @@
 package step.library.servlets;
 
 import org.json.JSONObject;
+import step.library.models.Book;
+import step.library.utils.Db;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
@@ -11,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.CopyOption;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 
@@ -39,8 +40,22 @@ public class BookServlet extends HttpServlet {
             resultMessage = "Cover file required" ;
         } else {
             String savedName = moveUploadedFile( cover, true ) ;
-            resultStatus = 1 ;
-            resultMessage = author + " " + title + " " + savedName ;
+            if( savedName == null ) {
+                resultStatus = -4 ;
+                resultMessage = "Cover save error" ;
+            } else {
+                if( Db.getBookOrm().add( new Book(
+                        author,
+                        title,
+                        savedName
+                ) ) ) {
+                    resultStatus = 1 ;
+                    resultMessage = author + " " + title + " " + savedName ;
+                } else {
+                    resultStatus = -5 ;
+                    resultMessage = "Book store error" ;
+                }
+            }
         }
 
         JSONObject result = new JSONObject();

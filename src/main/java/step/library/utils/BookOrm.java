@@ -1,11 +1,9 @@
 package step.library.utils;
 
 import org.json.JSONObject;
+import step.library.models.Book;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class BookOrm {
     private Connection connection ;
@@ -62,6 +60,32 @@ public class BookOrm {
         } catch( SQLException ex ) {
             System.err.println(
                     "BookOrm.installTable: " + ex.getMessage() + "\n" + query ) ;
+        }
+        return false ;
+    }
+
+    public boolean add( Book book ) {
+        if( connection == null || book == null ) return false ;
+        String query ;
+        String dbms = config.getString( "dbms" ) ;
+        if( dbms.equalsIgnoreCase( "Oracle")
+         || dbms.equalsIgnoreCase( "MySQL" ) )
+        {
+            query = "INSERT INTO " + PREFIX + "BOOKS " +
+                    "(author,title,cover) VALUES(?,?,?) " ;
+        } else {
+            return false ;
+        }
+        try( PreparedStatement statement =
+                    connection.prepareStatement( query ) ) {
+            statement.setString( 1, book.getAuthor() ) ;
+            statement.setString( 2, book.getTitle()  ) ;
+            statement.setString( 3, book.getCover()  ) ;
+            statement.executeUpdate() ;
+            return true ;
+        } catch( SQLException ex ) {
+            System.err.println(
+                    "BookOrm.add: " + ex.getMessage() + "\n" + query ) ;
         }
         return false ;
     }
