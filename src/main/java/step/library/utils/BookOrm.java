@@ -89,4 +89,41 @@ public class BookOrm {
         }
         return false ;
     }
+
+    public Book[] getList() {
+        if( connection == null ) return null ;
+        String query, queryCount ;
+        String dbms = config.getString( "dbms" ) ;
+        if( dbms.equalsIgnoreCase( "Oracle")
+                || dbms.equalsIgnoreCase( "MySQL" ) )
+        {
+            queryCount = "SELECT COUNT(*) FROM " + PREFIX + "BOOKS" ;
+            query = "SELECT B.id, B.author, B.title, B.cover FROM "
+                    + PREFIX + "BOOKS B";
+        } else {
+            return null ;
+        }
+        try( Statement statement = connection.createStatement() ) {
+            ResultSet res = statement.executeQuery( queryCount ) ;
+            res.next();
+            int cnt = res.getInt( 1 ) ;
+            res.close() ;
+            res = statement.executeQuery( query ) ;
+            Book[] ret = new Book[ cnt ] ;
+            for( int i = 0; i < cnt; i++ ) {
+                res.next() ;
+                ret[ i ] = new Book(
+                        res.getString( "1" ),
+                        res.getString( "2" ),
+                        res.getString( "3" ),
+                        res.getString( "4" )
+                ) ;
+            }
+            return ret ;
+        } catch( SQLException ex ) {
+            System.err.println(
+                    "BookOrm.getList: " + ex.getMessage() + "\n" + query ) ;
+        }
+        return null ;
+    }
 }

@@ -14,3 +14,24 @@ header {
     text-align: center;
     width: 100vw;
 }
+
+.book-add-form {
+    border: 2px solid #888;
+    display: block;
+    height: 12vw;
+    width: 30vw;
+}
+    .book-add-form input[type=file] {
+        position: absolute;
+        visibility: hidden;
+    }
+    .book-add-form label[for=cover] {
+        border: 1px solid #777;
+        float: left;
+        height: 10vw;
+        width: 7vw;
+    }
+    .book-add-form img {
+        max-height: 10vw;
+        max-width: 7vw;
+    }
