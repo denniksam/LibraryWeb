@@ -1,5 +1,6 @@
 package step.library.servlets;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 import step.library.models.Book;
 import step.library.utils.Db;
@@ -66,6 +67,17 @@ public class BookServlet extends HttpServlet {
         resp.getWriter().print( result.toString() ) ;
     }
 
+    @Override
+    // API style - returns JSON of Book[]
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setContentType( "application/json" ) ;
+        resp.getWriter().print(
+                new JSONArray(
+                        Db.getBookOrm().getList()
+                ).toString()
+        );
+    }
+
     /**
      * Save uploaded file, optionally make developer's copy
      * @param filePart HttpPart with file
@@ -99,6 +111,7 @@ public class BookServlet extends HttpServlet {
             System.err.println( "moveUploadedFile: filename extracting error" ) ;
             return null ;
         }
+        // TODO: trim filename length to 128
         int extPosition =  uploadedFilename.lastIndexOf( "." ) ;
         if( extPosition == -1 ) {
             System.err.println( "moveUploadedFile: filename without extension" ) ;

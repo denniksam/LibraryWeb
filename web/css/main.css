@@ -37,3 +37,11 @@ header {
         max-height: 10vw;
         max-width: 7vw;
     }
+.book-item {
+    display: inline-block;
+    margin: 1vw;
+}
+.book-item img {
+    max-height: 30vw;
+    max-width: 20vw;
+}

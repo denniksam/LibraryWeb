@@ -113,10 +113,10 @@ public class BookOrm {
             for( int i = 0; i < cnt; i++ ) {
                 res.next() ;
                 ret[ i ] = new Book(
-                        res.getString( "1" ),
-                        res.getString( "2" ),
-                        res.getString( "3" ),
-                        res.getString( "4" )
+                        res.getString( 1 ),
+                        res.getString( 2 ),
+                        res.getString( 3 ),
+                        res.getString( 4 )
                 ) ;
             }
             return ret ;
